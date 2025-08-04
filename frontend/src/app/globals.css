@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primary-50: 240 249 255;
+  --primary-100: 224 242 254;
+  /* Add more as needed */
+}
+
+
+/* ===============================================
+   DARK THEME
+   =============================================== */
+.dark {
+  /* Primary Brand Colors (Adjusted for dark theme) */
+  --primary-50: 8 47 73;
+  --primary-100: 12 74 110;
+  --primary-200: 7 89 133;
+  --primary-300: 3 105 161;
+  --primary-400: 2 132 199;
+  --primary-500: 14 165 233;
+  --primary-600: 56 189 248;
+  --primary-700: 125 211 252;
+  --primary-800: 186 230 253;
+  --primary-900: 224 242 254;
+  --primary-950: 240 249 255;
+
+  /* Secondary Colors (Adjusted for dark theme) */
+  --secondary-50: 59 7 100;
+  --secondary-100: 88 28 135;
+  --secondary-200: 107 33 168;
+  --secondary-300: 124 58 237;
+  --secondary-400: 147 51 234;
+  --secondary-500: 168 85 247;
+  --secondary-600: 192 132 252;
+  --secondary-700: 216 180 254;
+  --secondary-800: 233 213 255;
+  --secondary-900: 243 232 255;
+  --secondary-950: 250 245 255;
+
+  /* Success Colors (Brighter for dark theme) */
+  --success-50: 20 83 45;
+  --success-100: 22 101 52;
+  --success-200: 21 128 61;
+  --success-300: 22 163 74;
+  --success-400: 34 197 94;
+  --success-500: 74 222 128;
+  --success-600: 134 239 172;
+  --success-700: 187 247 208;
+  --success-800: 220 252 231;
+  --success-900: 240 253 244;
+
+  /* Warning Colors (Brighter for dark theme) */
+  --warning-50: 120 53 15;
+  --warning-100: 146 64 14;
+  --warning-200: 180 83 9;
+  --warning-300: 217 119 6;
+  --warning-400: 245 158 11;
+  --warning-500: 251 191 36;
+  --warning-600: 252 211 77;
+  --warning-700: 253 230 138;
+  --warning-800: 254 243 199;
+  --warning-900: 255 251 235;
+
+  /* Error Colors (Brighter for dark theme) */
+  --error-50: 127 29 29;
+  --error-100: 153 27 27;
+  --error-200: 185 28 28;
+  --error-300: 220 38 38;
+  --error-400: 239 68 68;
+  --error-500: 248 113 113;
+  --error-600: 252 165 165;
+  --error-700: 254 202 202;
+  --error-800: 254 226 226;
+  --error-900: 254 242 242;
+
+  /* Info Colors (Brighter for dark theme) */
+  --info-50: 30 58 138;
+  --info-100: 30 64 175;
+  --info-200: 29 78 216;
+  --info-300: 37 99 235;
+  --info-400: 59 130 246;
+  --info-500: 96 165 250;
+  --info-600: 147 197 253;
+  --info-700: 191 219 254;
+  --info-800: 219 234 254;
+  --info-900: 239 246 255;
+
+  /* Neutral Colors (Inverted for dark theme) */
+  --neutral-50: 10 10 10;
+  --neutral-100: 23 23 23;
+  --neutral-200: 38 38 38;
+  --neutral-300: 64 64 64;
+  --neutral-400: 82 82 82;
+  --neutral-500: 115 115 115;
+  --neutral-600: 163 163 163;
+  --neutral-700: 212 212 212;
+  --neutral-800: 229 229 229;
+  --neutral-900: 245 245 245;
+  --neutral-950: 250 250 250;
+
+  /* Semantic Background Colors (Dark theme) */
+  --bg-primary: 15 15 15;
+  --bg-secondary: 26 26 26;
+  --bg-tertiary: 38 38 38;
+  --bg-card: 26 26 26;
+  --bg-sidebar: 20 20 20;
+  --bg-header: 26 26 26;
+  --bg-modal: 26 26 26;
+  --bg-overlay: 0 0 0;
+
+  /* Semantic Text Colors (Dark theme) */
+  --text-primary: 250 250 250;
+  --text-secondary: 212 212 212;
+  --text-tertiary: 163 163 163;
+  --text-muted: 115 115 115;
+  --text-accent: 56 189 248;
+  --text-inverse: 23 23 23;
+
+  /* Semantic Border Colors (Dark theme) */
+  --border-primary: 38 38 38;
+  --border-secondary: 64 64 64;
+  --border-accent: 7 89 133;
+  --border-focus: 56 189 248;
+
+  /* Chart Colors (Adjusted for dark theme) */
+  --chart-1: 56 189 248;
+  --chart-2: 192 132 252;
+  --chart-3: 74 222 128;
+  --chart-4: 251 191 36;
+  --chart-5: 248 113 113;
+  --chart-6: 251 146 60; /* orange */
+  --chart-7: 45 212 191; /* teal */
+  --chart-8: 244 114 182; /* pink */
+  --chart-9: 129 140 248; /* indigo */
+  --chart-10: 34 211 238; /* cyan */
+
+  /* Social Media Colors (Adjusted for dark theme) */
+  --social-twitter: 56 189 248;
+  --social-verified: 56 189 248;
+  --social-bot: 248 113 113;
+  --social-influencer: 192 132 252;
+
+  /* Sentiment Colors (Adjusted for dark theme) */
+  --sentiment-positive: 74 222 128;
+  --sentiment-negative: 248 113 113;
+  --sentiment-neutral: 163 163 163;
+
+  /* Shadow Colors (More prominent in dark theme) */
+  --shadow-color: 0 0 0;
+  --shadow-opacity-sm: 0.3;
+  --shadow-opacity-base: 0.4;
+  --shadow-opacity-md: 0.5;
+  --shadow-opacity-lg: 0.6;
+  --shadow-opacity-xl: 0.7;
+}
+
+/* ===============================================
+   SYSTEM PREFERENCE DETECTION
+   =============================================== */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    /* Apply dark theme variables when system prefers dark */
+    --bg-primary: 15 15 15;
+    --bg-secondary: 26 26 26;
+    --bg-tertiary: 38 38 38;
+    --bg-card: 26 26 26;
+    --bg-sidebar: 20 20 20;
+    --bg-header: 26 26 26;
+    --bg-modal: 26 26 26;
+
+    --text-primary: 250 250 250;
+    --text-secondary: 212 212 212;
+    --text-tertiary: 163 163 163;
+    --text-muted: 115 115 115;
+    --text-accent: 56 189 248;
+    --text-inverse: 23 23 23;
+
+    --border-primary: 38 38 38;
+    --border-secondary: 64 64 64;
+    --border-accent: 7 89 133;
+    --border-focus: 56 189 248;
+
+    --chart-1: 56 189 248;
+    --chart-2: 192 132 252;
+    --chart-3: 74 222 128;
+    --chart-4: 251 191 36;
+    --chart-5: 248 113 113;
+
+    --sentiment-positive: 74 222 128;
+    --sentiment-negative: 248 113 113;
+    --sentiment-neutral: 163 163 163;
+
+    --shadow-opacity-sm: 0.3;
+    --shadow-opacity-base: 0.4;
+    --shadow-opacity-md: 0.5;
+    --shadow-opacity-lg: 0.6;
+    --shadow-opacity-xl: 0.7;
+  }
+}
+
+/* ===============================================
+   BASE STYLES & TRANSITIONS
+   =============================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background-color: rgb(var(--bg-primary));
+  color: rgb(var(--text-primary));
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* Smooth transitions for theme switching */
+*,
+*::before,
+*::after {
+  transition: 
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    fill 0.3s ease,
+    stroke 0.3s ease,
+    opacity 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
+}
+
+/* Remove transitions for reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
